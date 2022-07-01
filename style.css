@@ -32,12 +32,28 @@ body,
 body {
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 15rem 1fr;
+    grid-template-columns: 20rem 1fr;
     grid-template-rows: 3rem 6rem auto;
 }
 
 .header {
     grid-template-columns: repeat(2, 1fr);
+}
+
+/* Navigation Bar */
+
+.nav {
+    padding: 1rem;
+}
+
+.nav h1 {
+    font-size: 2rem;
+}
+
+.page {
+    grid-template-rows: repeat(9, 2rem);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .right {
@@ -53,10 +69,6 @@ body {
 
 .buttons {
     grid-template-columns: repeat(3, 1fr);
-}
-
-.page {
-    grid-template-rows: repeat(9, 2rem);
 }
 
 .nav {
