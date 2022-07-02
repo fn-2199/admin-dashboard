@@ -16,13 +16,10 @@ h3 {
     font-size: 16px;
 }
 
-body,
-.header,
 .right,
 .opening,
 .greeting,
 .buttons,
-.page,
 .container,
 .projects,
 .box {
@@ -36,25 +33,55 @@ body {
     grid-template-rows: 3rem 6rem auto;
 }
 
+/* HEADER */
+
 .header {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* Navigation Bar */
+/* NAVIGATION */
 
 .nav {
-    padding: 1rem;
+    padding: 2rem;
+}
+
+.title,
+.nav li {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    align-items: center;
+}
+
+.title,
+.account {
+    margin-bottom: 40px;
+}
+
+.nav li {
+    padding: 1rem 0;
+    display: grid;
+}
+
+.nav li span:first-child
+{
+    padding-right: 15px;
+}
+
+.title span {
+    padding-right: 10px;
 }
 
 .nav h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-.page {
-    grid-template-rows: repeat(9, 2rem);
+.nav > ul {
     font-size: 1.2rem;
     font-weight: 700;
 }
+
 
 .right {
     grid-template-columns: repeat(3, 1fr);
