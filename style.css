@@ -88,7 +88,8 @@ input {
     
 }
 
-.greeting {
+.greeting,
+.person {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
@@ -97,7 +98,7 @@ input {
     column-gap: 15px;
 }
 
-.greeting img {
+img {
     grid-row: 1 / -1;
 }
 
@@ -177,7 +178,7 @@ input {
     background: var(--light-color);
     display: grid;
     grid-template-columns: auto 18rem;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     padding: 2rem;
     gap: 2rem;
 }
@@ -240,4 +241,8 @@ h2 {
     grid-template-columns: repeat(3, auto);
     justify-content: end;
     gap: 1rem;
+}
+
+.person ~ .person {
+    margin-top: 20px;
 }
