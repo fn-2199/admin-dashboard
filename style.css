@@ -16,34 +16,123 @@ h3 {
     font-size: 16px;
 }
 
-.right,
-.opening,
-.greeting,
-.buttons,
-.container,
-.projects,
-.box {
-    display: grid;
+:root {
+    --main-color: #6f36bc;
+    --secondary-color: #ff4778;
+    --tertiary-color: #ffffff;
+    --light-color: #e7e5e4;
+    --dark-color: #36174d;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
     display: grid;
-    grid-template-columns: 20rem 1fr;
-    grid-template-rows: 3rem 6rem auto;
+    grid-template-columns: 18rem 1fr;
+    grid-template-rows: 5rem 6rem auto;
+}
+
+.header,
+.opening,
+.container {
+    grid-column: 2 / 4;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* HEADER */
 
 .header {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
 }
 
+input {
+    width: 40rem;
+    height: 2.5rem;
+    background: var(--light-color);
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: 20px;
+}
+
+.right{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+.user {
+    font-weight: 700;
+}
+
+/* OPENING */
+.opening {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    padding: 0 50px;
+    
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    justify-content: start;
+    column-gap: 15px;
+}
+
+.greeting img {
+    grid-row: 1 / -1;
+}
+
+.greeting p {
+    align-self: end;
+}
+
+.greeting h1 {
+    align-self: start;
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: center;
+    gap: 30px;
+}
+
+.buttons > li {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    border-radius: 20px;
+    width: 90px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+}
 /* NAVIGATION */
 
 .nav {
     padding: 2rem;
+    grid-row: 1 / -1;
+    background: var(--main-color);
+    color: var(--tertiary-color);
 }
 
 .title,
@@ -64,8 +153,7 @@ body {
     display: grid;
 }
 
-.nav li span:first-child
-{
+.nav li span:first-child {
     padding-right: 15px;
 }
 
@@ -82,39 +170,74 @@ body {
     font-weight: 700;
 }
 
-
-.right {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.opening {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.greeting {
-}
-
-.buttons {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.nav {
-    grid-row: 1 / -1;
-    background: #ff7755;
-    color: white;
-}
-
-.header,
-.opening,
-.container {
-    grid-column: 2 / 4;
-}
+/* CONTAINER */
 
 .container {
     overflow: auto;
-    background: #bccbde;
+    background: var(--light-color);
+    display: grid;
+    grid-template-columns: auto 18rem;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 2rem;
 }
 
-ul {
-    list-style-type: none;
+.projects {
+    grid-row: 1 / 3;
+}
+
+.proj-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    border-left: 10px solid var(--secondary-color);
+}
+
+.side-container,
+.announcement > * {
+    font-size: 14px;
+}
+
+.announcement h3 {
+    margin-bottom: 5px;
+}
+
+.announcements .side-container div ~ div {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid var(--light-color);
+}
+
+.announcement p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project,
+.side-container {
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.proj-container,
+.side-container,
+.icons {
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    gap: 1rem;
 }
