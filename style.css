@@ -52,6 +52,12 @@ input {
     background: var(--light-color);
     border: none;
     padding: 0 20px;
+    color: var(--dark-color);
+}
+
+input:focus {
+    border: 2px solid var(--dark-color);
+    outline: none;
 }
 
 .search-bar {
@@ -72,6 +78,7 @@ input {
 }
 
 .user,
+.greeting p:last-child,
 .nav > ul {
     font-weight: 700;
 }
@@ -91,7 +98,7 @@ input {
     grid-row: 1 / -1;
 }
 
-.greeting h1 {
+.greeting p:last-child {
     font-size: 1.5rem;
 }
 
