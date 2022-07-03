@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
 </head>
 <body>
-    <div class="header">
+    <header>
         <div class="search-bar">
             <label for="search"><span class="material-icons-outlined search-icon">search</span></label>
             <input type="search" name="search" id="search">
@@ -24,14 +24,14 @@
             <p>Hi there,</p>
             <p>Morgan Oakley (@morgan)</p>
         </div>
-        <ul class="buttons">
-            <li>New</li>
-            <li>Upload</li>
-            <li>Share</li>
+        <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
         </ul>
-    </div>
+    </header>
 
-    <div class="nav">
+    <nav>
         <div class="title">
             <span class="material-icons" style="font-size: 36px">dashboard</span>
             <h1>Dashboard</h1>
@@ -74,13 +74,13 @@
                 <span class="material-icons-outlined">verified_user</span>
                 <span>Privacy</span></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="container">
-        <div class="projects">
+    <section class="container">
+        <section class="projects">
             <h2>Your Projects</h2>
             <div class="proj-container">
-                <div class="project">
+                <article class="project">
                     <h3>Super Cool Project</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p>
                     <div class="icons">
@@ -88,8 +88,8 @@
                         <span class="material-icons-outlined">visibility</span>
                         <span class="material-icons-outlined">open_in_new</span>
                     </div>
-                </div>
-                <div class="project">
+                </article>
+                <article class="project">
                     <h3>Less Cool Project</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p>
                     <div class="icons">
@@ -97,8 +97,8 @@
                         <span class="material-icons-outlined">visibility</span>
                         <span class="material-icons-outlined">open_in_new</span>
                     </div>
-                </div>
-                <div class="project">
+                </article>
+                <article class="project">
                     <h3>Impossible App</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p>
                     <div class="icons">
@@ -106,8 +106,8 @@
                         <span class="material-icons-outlined">visibility</span>
                         <span class="material-icons-outlined">open_in_new</span>
                     </div>
-                </div>
-                <div class="project">
+                </article>
+                <article class="project">
                     <h3>Easy Peasy App</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p>
                     <div class="icons">
@@ -115,8 +115,8 @@
                         <span class="material-icons-outlined">visibility</span>
                         <span class="material-icons-outlined">open_in_new</span>
                     </div>
-                </div>
-                <div class="project">
+                </article>
+                <article class="project">
                     <h3>Ad Blocker</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p>
                     <div class="icons">
@@ -124,8 +124,8 @@
                         <span class="material-icons-outlined">visibility</span>
                         <span class="material-icons-outlined">open_in_new</span>
                     </div>
-                </div>
-                <div class="project">
+                </article>
+                <article class="project">
                     <h3>Money Maker</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, reprehenderit id! Error laudantium assumenda corporis, vel quae aliquid voluptates libero a, consequuntur.</p>
                     <div class="icons">
@@ -133,29 +133,29 @@
                         <span class="material-icons-outlined">visibility</span>
                         <span class="material-icons-outlined">open_in_new</span>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
         <div class="sidebar">
             <h2>Announcements</h2>
-            <div class="announcements">
-                <div class="announcement">
+            <section class="announcements">
+                <article class="announcement">
                     <h3>Site Maintenence</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum ipsam, blanditiis quia et perspiciatis</p>
-                </div>
-                <div class="announcement">
+                </article>
+                <article class="announcement">
                     <h3>Community Share Day</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum ipsam, blanditiis quia et perspiciatis</p>
-                </div>
-                <div class="announcement">
+                </article>
+                <article class="announcement">
                     <h3>Updated Private Policy</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum ipsam, blanditiis quia et perspiciatis</p>
-                </div>
-            </div>
+                </article>
+            </section>
 
             <h2>Trending</h2>
-            <div class="trending">
+            <section class="trending">
                 <div class="person">
                     <img src="./avatars/man.png"  alt="tegan's avatar" width="45px" height="auto">
                     <div class="user">@tegan</div>
@@ -176,9 +176,9 @@
                     <div class="user">@kendall</div>
                     <div class="application">No Traffic Maker</div>
                 </div>
-            </div>
+            </section>
         </div>
-    </div>
+    </section>
     
 </body>
 </html>

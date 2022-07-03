@@ -36,7 +36,7 @@ ul {
     list-style-type: none;
 }
 
-.header {
+header {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
@@ -78,8 +78,9 @@ input:focus {
 }
 
 .user,
+button,
 .greeting p:last-child,
-.nav > ul {
+nav > ul {
     font-weight: 700;
 }
 
@@ -108,12 +109,13 @@ input:focus {
     gap: 30px;
 }
 
-.buttons > li,
+button,
 input {
     border-radius: 20px;
 }
 
-.buttons > li {
+button {
+    border: none;
     background: var(--secondary-color);
     color: var(--tertiary-color);
     width: 90px;
@@ -122,39 +124,39 @@ input {
     place-items: center;
 }
 
-.nav {
+nav {
     grid-row: 1 / 3;
     background: var(--main-color);
     color: var(--tertiary-color);
 }
 
 .title,
-.nav li {
+nav li {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: start;
     align-items: center;
 }
 
-.nav li {
+nav li {
     padding: 15px 0;
 }
 
 .title span,
-.nav li span:first-child {
+nav li span:first-child {
     margin-right: 15px;
 }
 
-.nav h1 {
+nav h1 {
     font-size: 1.5rem;
 }
 
-.nav > ul {
+nav > ul {
     font-size: 1.2rem;
     margin-top: 40px;
 }
 
-.nav,
+nav,
 .container,
 .project,
 .announcements,
@@ -222,7 +224,7 @@ h2 {
 
 .proj-container,
 .icons,
-.sidebar > div,
+.sidebar > section,
 .person ~ .person,
 .announcement ~ .announcement {
     margin-top: 16px;
